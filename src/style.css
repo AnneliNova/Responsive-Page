@@ -1,0 +1,52 @@
+@import 'mobile.css';
+
+@media screen and (min-width: 1024px) {
+  /* 2. Root custom properties */
+  :root {
+    --basic-background-image: linear-gradient(to right, #2a0845, #6441A5);
+    --basic-background-color: #6441A5;
+  }
+
+  /* 3. Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header a {
+    border-top: none;
+  }
+
+  /* 4. Body */
+  body {
+    margin: 0;
+  }
+
+  /* 5. Main layout */
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /* 6. Paragraphs inside article */
+  article p {
+    padding-right: 1rem;
+  }
+
+  /* 7. Cards container */
+  .cards {
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* 8. Cards items */
+  .cards li {
+    width: 31%;
+    margin-bottom: 0;
+  }
+}
